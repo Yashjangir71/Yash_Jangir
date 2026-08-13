@@ -39,24 +39,75 @@ header a:hover {
 
 /* Navigation */
 
+/* Navigation */
+
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+
+  gap: 15px;
+
   list-style: none;
+
+  margin: 0;
   padding: 0;
+
   flex-wrap: wrap;
 }
 
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
 nav a {
+  display: inline-block;
+
   color: white;
   text-decoration: none;
+
+  padding: 9px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: rgb(255, 227, 12);
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #00c6ff,
+    #0072ff,
+    #7b2ff7
+  );
+
+  border-color: white;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 5px 15px rgba(0, 114, 255, 0.4),
+    0 0 15px rgba(123, 47, 247, 0.5);
 }
 
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
 /* Main content */
 
 main {
