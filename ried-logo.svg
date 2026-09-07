@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>RIED logo</title>
+  <path fill="#21557d" d="M4 4h54v54H4z"/>
+  <path fill="#268d9e" d="M62 4h54v54H62z"/>
+  <path fill="#fdbb16" d="M4 62h54v54H4z"/>
+  <path fill="#80ad3c" d="M62 62h54v54H62z"/>
+  <path fill="#fff" d="M58 4h4v112h-4zM4 58h112v4H4z"/>
+  <text x="31" y="43" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle">R</text>
+  <text x="89" y="43" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle">I</text>
+  <text x="31" y="101" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle">E</text>
+  <text x="89" y="101" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle">D</text>
+</svg>

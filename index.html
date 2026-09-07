@@ -4,99 +4,404 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Yash Jangir</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/nav.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="profile.jpeg" alt="Yash Jangir profile photo" width="200">
-    <h1>Yash Jangir</h1>
-    <p>Computer Science Engineering (AI &amp; ML) Student | AI/ML Engineer | Generative AI Enthusiast</p>
-    <p>Bengaluru, Karnataka — yashjjn2005@gmail.com — <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a> — <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    <nav>
-      <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#skills">Technical Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="cyber-header">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="header-inner">
+      <nav class="topbar">
+        <img class="brand" src="favicon.png" alt="Yash Jangir home" width="50" height="50">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="site-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI • ML • GENAI • FULL STACK</p>
+          <h2 class="hero-name">Yash Jangir</h2>
+          <p class="availability-status hero-status"><span></span>Currently available for internships, freelance, and collaborations</p>
+          <h1>Building <span>AI</span> that feels like the future.</h1>
+          <p class="tagline">Computer Science Engineering student building practical AI systems, experimenting with generative AI, and turning ideas into real-world products.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">View Projects</a>
+            <a class="secondary-btn" href="#contact">Let’s Connect</a>
+            <a class="secondary-btn" href="resume.txt" download>Download Resume</a>
+          </div>
+          <div class="hero-badges" aria-label="Key focus areas">
+            <span class="badge">AI Engineer</span>
+            <span class="badge">Prompt Engineering</span>
+            <span class="badge">ML Systems</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-tilt>
+          <div class="visual-card">
+            <img src="profile.jpeg" alt="Yash Jangir profile photo" width="200">
+            <div class="mini-stat">
+              <span>Focus</span>
+              <strong>GenAI + Product</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </header>
 
   <main>
-    <h2 id="summary">Professional Summary</h2>
-  <p>Computer Science Engineering (AI &amp; ML) student with hands-on experience developing AI-powered applications, machine learning solutions, and intelligent software systems. Skilled in Python, Machine Learning, Prompt Engineering, and full-stack application development. Passionate about building practical AI solutions using modern software engineering practices and continuously expanding expertise in Generative AI and Large Language Models.</p>
+    <section class="panel reveal-item" id="summary" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">About Me</p>
+        <h2>Professional Summary</h2>
+      </div>
+      <p>Computer Science Engineering (AI &amp; ML) student with hands-on experience developing AI-powered applications, machine learning solutions, and intelligent software systems. Skilled in Python, Machine Learning, Prompt Engineering, and full-stack application development. Passionate about building practical AI solutions using modern software engineering practices and continuously expanding expertise in Generative AI and Large Language Models.</p>
 
-  <h2 id="skills">Technical Skills</h2>
-  <ul>
-    <li><strong>Programming:</strong> Python, TypeScript, sql</li>
-    <li><strong>AI / Machine Learning:</strong> Machine Learning, Prompt Engineering</li>
-    <li><strong>Databases:</strong> MongoDB</li>
-    <li><strong>Developer Tools:</strong> Git, GitHub, Vercel</li>
-  </ul>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <strong>3+</strong>
+          <span>AI products built</span>
+        </div>
+        <div class="proof-card">
+          <strong>6+</strong>
+          <span>certifications</span>
+        </div>
+        <div class="proof-card">
+          <strong>8.0</strong>
+          <span>CGPA</span>
+        </div>
+        <div class="proof-card">
+          <strong>100%</strong>
+          <span>curiosity-driven</span>
+        </div>
+      </div>
+    </section>
 
+    <section class="panel reveal-item" id="skills" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">Core Stack</p>
+        <h2>Technical Skills</h2>
+      </div>
+      <ul class="skill-list">
+        <li>
+          <strong>Programming:</strong>
+          <div class="tech-items">
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/python.svg" alt="">Python</span>
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/typescript.svg" alt="">TypeScript</span>
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/mysql.svg" alt="">SQL</span>
+          </div>
+        </li>
+        <li>
+          <strong>AI / Machine Learning:</strong>
+          <div class="tech-items">
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/tensorflow.svg" alt="">Machine Learning</span>
+            <span class="tech-item"><img class="tech-logo-image tech-logo-invert" src="assets/tech/ollama.svg" alt="">Prompt Engineering</span>
+          </div>
+        </li>
+        <li>
+          <strong>Databases:</strong>
+          <div class="tech-items">
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/mongodb.svg" alt="">MongoDB</span>
+          </div>
+        </li>
+        <li>
+          <strong>Developer Tools:</strong>
+          <div class="tech-items">
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/git.svg" alt="">Git</span>
+            <span class="tech-item"><img class="tech-logo-image" src="assets/tech/github.svg" alt="">GitHub</span>
+            <span class="tech-item"><img class="tech-logo-image tech-logo-invert" src="assets/tech/vercel.svg" alt="">Vercel</span>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-<h2 id="projects">Projects</h2>
+    <section class="panel reveal-item" id="projects" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">Selected Work</p>
+        <h2>Selected Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">AI PRODUCT</span>
+            <span class="impact-pill">+60% Efficiency</span>
+          </div>
+          <h3>VendorLead AI</h3>
+          <p>AI-powered lead intelligence platform built to discover, prioritize, and support smarter sales decisions.</p>
+          <div class="project-meta">
+            <span>Python</span>
+            <span>AI</span>
+            <span>Automation</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="mini-link">Discuss</a>
+            <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer" class="mini-link">GitHub</a>
+          </div>
+        </article>
 
-<div class="project">
-  <h3>VendorLead AI</h3>
-  <p>AI-Powered Lead Intelligence Platform (Ongoing)</p>
-</div>
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">ML SYSTEM</span>
+            <span class="impact-pill">Forecasting</span>
+          </div>
+          <h3>Smart Inventory Management System</h3>
+          <p>Machine learning-based forecasting solution for better stock planning and operational efficiency.</p>
+          <div class="project-meta">
+            <span>ML</span>
+            <span>Analytics</span>
+            <span>SQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="mini-link">Discuss</a>
+            <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer" class="mini-link">GitHub</a>
+          </div>
+        </article>
 
-<div class="project">
-  <h3>Smart Inventory Management System</h3>
-  <p>Machine Learning-Based Inventory Forecasting</p>
-</div>
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">SECURITY AI</span>
+            <span class="impact-pill">Research</span>
+          </div>
+          <h3>PiGuard</h3>
+          <p>Academic privacy and network protection system focused on reducing digital risks in connected environments.</p>
+          <div class="project-meta">
+            <span>Security</span>
+            <span>AI</span>
+            <span>Research</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="mini-link">Discuss</a>
+            <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer" class="mini-link">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<div class="project">
-  <h3>PiGuard</h3>
-  <p>Intelligent Network Privacy Security System (Academic, Ongoing)</p>
-</div>
-  <h3 id="education">Education</h3>
-  <ul>
-    <li><strong>Sai Vidya Institute of Technology</strong> — Bachelor of Engineering (B.E.), Computer Science Engineering (AI &amp; ML), 2023–2027. CGPA: 8.0 / 10</li>
-  </ul>
+    <section class="panel reveal-item experience-panel" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">Professional Journey</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-mark">
+            <img src="ried-logo.svg" alt="RIED logo">
+          </div>
+          <div class="experience-content">
+            <h3>Innovation Intern</h3>
+            <p class="experience-company">RIED Pvt. Ltd. <span>Internship</span></p>
+            <p class="experience-meta">Aug 2026 - Present <span>2 mos</span> · Bengaluru, Karnataka, India · Remote</p>
+            <ul>
+              <li>Selected for the prestigious RIED Founder Fellowship Program as an Innovation Intern in the IT &amp; Business Development track.</li>
+              <li>Contributed to RIED's technical and business growth initiatives while collaborating with mentors and leadership.</li>
+              <li>Engaged in remote projects focused on research, innovation, and enterprise-building activities.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-mark bharat-mark">
+            <img src="bharatcares-logo-new.svg" alt="BharatCares logo">
+          </div>
+          <div class="experience-content">
+            <h3>AI Automation &amp; Intelligent Solutions Intern</h3>
+            <p class="experience-company">BharatCares <span>Internship</span></p>
+            <p class="experience-meta">Jun 2026 - Jul 2026 <span>2 mos</span> · India · Remote</p>
+            <ul>
+              <li>Collaborated on developing AI agents and workflow automation solutions to enhance operational efficiency.</li>
+              <li>Engaged in AI integration projects, gaining hands-on experience in Machine Learning and Data Analytics.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <h3 id="certifications">Certifications</h3>
-  <ul>
-    <li>AWS Academy Graduate — Generative AI Foundations</li>
-    <li>IBM SkillsBuild — AI Automation &amp; Intelligent Solutions Internship</li>
-    <li>Getting Started with Generative AI (IBM SkillsBuild)</li>
-    <li>AWS Solutions Architecture Job Simulation (Forage)</li>
-    <li>Introduction to Amazon EC2 (AWS Training &amp; Certification)</li>
-    <li>Deloitte Technology Job Simulation (Forage)</li>
-  </ul>
+    <section class="panel reveal-item" data-tilt>
+      <h3 id="education">Education</h3>
+      <ul class="info-list">
+        <li><strong>Sai Vidya Institute of Technology</strong> — Bachelor of Engineering (B.E.), Computer Science Engineering (AI &amp; ML), 2023–2027. CGPA: 8.0 / 10</li>
+      </ul>
+    </section>
 
-  <h3 id="languages">Languages</h3>
-  <ul>
-    <li>English — Professional Working Proficiency</li>
-    <li>Hindi — Native Proficiency</li>
-  </ul>
+    <section class="panel reveal-item" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">Proof Archive</p>
+        <h3 id="certifications">Certifications</h3>
+      </div>
+      <div class="certificate-preview-grid">
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">AWS Academy</span>
+          <h4>Generative AI Foundations</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">IBM SkillsBuild</span>
+          <h4>AI Automation &amp; Intelligent Solutions Internship</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">Forage</span>
+          <h4>Solutions Architecture Job Simulation</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">Deloitte</span>
+          <h4>Technology Job Simulation</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">AWS Training</span>
+          <h4>Introduction to Amazon EC2</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+        <article class="certificate-preview-card">
+          <div class="certificate-placeholder">Add certificate image</div>
+          <span class="certificate-type">IBM SkillsBuild</span>
+          <h4>Getting Started with Generative AI</h4>
+          <p>Open the certificate proof here.</p>
+          <a href="#certifications" class="mini-link">View proof</a>
+        </article>
+      </div>
+    </section>
 
-  <h3 id="contact">Get in Touch</h3>
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="a03bbf33-7309-4b88-9a04-64fa320c5e68">
-    <input type="hidden" name="subject" value="New portfolio contact message">
+    <section class="panel reveal-item" data-tilt>
+      <h3 id="languages">Languages</h3>
+      <ul class="info-list">
+        <li>English — Professional Working Proficiency</li>
+        <li>Hindi — Native Proficiency</li>
+      </ul>
+    </section>
 
-    <label for="contact-name">Name:</label>
-    <input id="contact-name" type="text" name="name" required>
+    <section class="panel contact-panel reveal-item" id="contact" data-tilt>
+      <div class="section-heading">
+        <p class="panel-kicker">Let’s Connect</p>
+        <h3>Get in Touch</h3>
+      </div>
 
-    <label for="contact-email">Email:</label>
-    <input id="contact-email" type="email" name="email" required>
+      <div class="contact-layout">
+        <div class="contact-copy">
+          <p>Open to internships, collaborations, and AI product opportunities. If you are building something smart, I’d love to connect.</p>
+          <div class="contact-highlights">
+            <span class="email-row"><a href="mailto:yashjjn2005@gmail.com" class="email-link">yashjjn2005@gmail.com</a><button class="copy-email" type="button" data-copy-email="yashjjn2005@gmail.com">Copy email</button></span>
+            <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
 
-    <label for="contact-message">Message:</label>
-    <textarea id="contact-message" name="message" required></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a03bbf33-7309-4b88-9a04-64fa320c5e68">
+          <input type="hidden" name="subject" value="New portfolio contact message">
 
-    <button type="submit">Send Message</button>
-  </form>
+          <label for="contact-name">Name:</label>
+          <input id="contact-name" type="text" name="name" required>
 
-    <p>Connect: <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <label for="contact-email">Email:</label>
+          <input id="contact-email" type="email" name="email" required>
+
+          <label for="contact-message">Message:</label>
+          <textarea id="contact-message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
+    <div class="footer-links" aria-label="Social links">
+      <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:yashjjn2005@gmail.com">Email</a>
+      <a href="resume.txt" download>Resume</a>
+    </div>
     <p>&copy; 2026 Yash Jangir. All rights reserved.</p>
   </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal-item');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach((item) => observer.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add('visible'));
+    }
+
+    const canTilt = window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const tiltElements = document.querySelectorAll('[data-tilt]:not(.project)');
+
+    if (canTilt) tiltElements.forEach((element) => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const rotateY = ((x / rect.width) - 0.5) * 20;
+        const rotateX = (0.5 - (y / rect.height)) * 20;
+        element.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      });
+
+      element.addEventListener('mouseleave', () => {
+        element.style.transform = '';
+      });
+    });
+
+    const supportsTorch = window.matchMedia('(pointer: fine)').matches;
+    if (supportsTorch) {
+      document.addEventListener('mousemove', (event) => {
+        document.body.style.setProperty('--torch-x', `${event.clientX}px`);
+        document.body.style.setProperty('--torch-y', `${event.clientY}px`);
+        document.body.classList.add('torch-active');
+      });
+
+      document.addEventListener('mouseleave', () => {
+        document.body.classList.remove('torch-active');
+      });
+    }
+
+    const progressBar = document.querySelector('.scroll-progress span');
+    const updateScrollProgress = () => {
+      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+      progressBar.style.width = `${progress}%`;
+    };
+
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+    window.addEventListener('resize', updateScrollProgress);
+    updateScrollProgress();
+  </script>
 </body>
 </html>

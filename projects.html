@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects | Yash Jangir</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+  <header class="cyber-header subpage-header">
+    <div class="hero-glow"></div>
+    <div class="header-inner">
+      <img src="profile.jpeg" alt="Yash Jangir profile photo" width="200" data-tilt>
+      <p class="eyebrow">PROJECTS</p>
+      <h1>Builds &amp; Experiments</h1>
+      <p class="availability-status"><span></span>Currently available for internships, freelance, and collaborations</p>
+      <nav class="topbar page-nav">
+        <img class="brand" src="favicon.png" alt="Yash Jangir home" width="50" height="50">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="site-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel reveal-item" data-tilt>
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">AI Product</span>
+            <span class="impact-pill">In progress</span>
+          </div>
+          <h3>VendorLead AI</h3>
+          <p>AI-powered lead intelligence platform focused on smarter data extraction, ranking, and decision support for sales workflows.</p>
+          <div class="project-meta"><span>Python</span><span>GenAI</span><span>Automation</span></div>
+          <div class="project-actions"><a class="mini-link" href="contact.html">Discuss this build</a></div>
+        </article>
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">ML System</span>
+            <span class="impact-pill">Forecasting</span>
+          </div>
+          <h3>Smart Inventory Management System</h3>
+          <p>Machine learning-based inventory forecasting solution designed to improve stock planning and reduce shortages.</p>
+          <div class="project-meta"><span>Machine Learning</span><span>Python</span><span>Analytics</span></div>
+          <div class="project-actions"><a class="mini-link" href="contact.html">Discuss this build</a></div>
+        </article>
+        <article class="project reveal-item" data-tilt>
+          <div class="project-head">
+            <span class="project-tag">Privacy Tech</span>
+            <span class="impact-pill">Research</span>
+          </div>
+          <h3>PiGuard</h3>
+          <p>Academic privacy and network protection system designed to detect and reduce digital privacy risks in smart environments.</p>
+          <div class="project-meta"><span>Security</span><span>IoT</span><span>Python</span></div>
+          <div class="project-actions"><a class="mini-link" href="contact.html">Discuss this build</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel building-panel reveal-item" data-tilt>
+      <div>
+        <span class="building-status">Currently building</span>
+        <h2>Small AI tools with useful edges.</h2>
+        <p>Exploring practical GenAI workflows, sharper product interfaces, and reliable systems that turn messy inputs into clear next steps.</p>
+      </div>
+      <div class="building-label">Next up: turning experiments into focused, usable products.</div>
+    </section>
+
+    <section class="panel reveal-item" data-tilt>
+      <h2>Project Highlights</h2>
+      <ul class="info-list">
+        <li><strong>AI &amp; ML Focus:</strong> Building practical systems using modern workflows and intelligent automation.</li>
+        <li><strong>Product Thinking:</strong> Turning technical ideas into useful, real-world user solutions.</li>
+        <li><strong>Research &amp; Iteration:</strong> Constantly improving models, UX, and system design through testing and learning.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links" aria-label="Social links">
+      <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:yashjjn2005@gmail.com">Email</a>
+      <a href="resume.txt" download>Resume</a>
+    </div>
+    <p>&copy; 2026 Yash Jangir. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    document.querySelectorAll('[data-tilt]').forEach((element) => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const rotateY = ((x / rect.width) - 0.5) * 18;
+        const rotateX = (0.5 - (y / rect.height)) * 18;
+        element.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      });
+
+      element.addEventListener('mouseleave', () => {
+        element.style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

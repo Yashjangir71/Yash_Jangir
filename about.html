@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About | Yash Jangir</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+  <header class="cyber-header subpage-header">
+    <div class="hero-glow"></div>
+    <div class="header-inner">
+      <img src="profile.jpeg" alt="Yash Jangir profile photo" width="200" data-tilt>
+      <p class="eyebrow">ABOUT ME</p>
+      <h1>Yash Jangir</h1>
+      <p class="availability-status"><span></span>Currently available for internships, freelance, and collaborations</p>
+      <nav class="topbar page-nav">
+        <img class="brand" src="favicon.png" alt="Yash Jangir home" width="50" height="50">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="site-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel reveal-item" data-tilt>
+      <h2>Professional Summary</h2>
+      <p>Computer Science Engineering (AI &amp; ML) student with hands-on experience developing AI-powered applications, machine learning solutions, and intelligent software systems. Skilled in Python, Machine Learning, Prompt Engineering, and full-stack application development. Passionate about building practical AI solutions using modern software engineering practices and continuously expanding expertise in Generative AI and Large Language Models.</p>
+    </section>
+
+    <section class="panel reveal-item" data-tilt>
+      <h2>Technical Skills</h2>
+      <ul class="skill-list">
+        <li><strong>Programming:</strong> Python, TypeScript, SQL</li>
+        <li><strong>AI / Machine Learning:</strong> Machine Learning, Prompt Engineering</li>
+        <li><strong>Databases:</strong> MongoDB</li>
+        <li><strong>Developer Tools:</strong> Git, GitHub, Vercel</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal-item" data-tilt>
+      <h3 id="education">Education</h3>
+      <ul class="info-list">
+        <li><strong>Sai Vidya Institute of Technology</strong> — Bachelor of Engineering (B.E.), Computer Science Engineering (AI &amp; ML), 2023–2027. CGPA: 8.0 / 10</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal-item" data-tilt>
+      <h3 id="certifications">Certifications</h3>
+      <ul class="info-list">
+        <li>AWS Academy Graduate — Generative AI Foundations</li>
+        <li>IBM SkillsBuild — AI Automation &amp; Intelligent Solutions Internship</li>
+        <li>Getting Started with Generative AI (IBM SkillsBuild)</li>
+        <li>AWS Solutions Architecture Job Simulation (Forage)</li>
+        <li>Introduction to Amazon EC2 (AWS Training &amp; Certification)</li>
+        <li>Deloitte Technology Job Simulation (Forage)</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal-item" data-tilt>
+      <h3 id="languages">Languages</h3>
+      <ul class="info-list">
+        <li>English — Professional Working Proficiency</li>
+        <li>Hindi — Native Proficiency</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links" aria-label="Social links">
+      <a href="https://github.com/Yashjangir71" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/yash-jangir-3822b129b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:yashjjn2005@gmail.com">Email</a>
+      <a href="resume.txt" download>Resume</a>
+    </div>
+    <p>&copy; 2026 Yash Jangir. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    document.querySelectorAll('[data-tilt]').forEach((element) => {
+      element.addEventListener('mousemove', (event) => {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        const rotateY = ((x / rect.width) - 0.5) * 18;
+        const rotateX = (0.5 - (y / rect.height)) * 18;
+        element.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      });
+
+      element.addEventListener('mouseleave', () => {
+        element.style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

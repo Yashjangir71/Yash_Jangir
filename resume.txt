@@ -1,0 +1,33 @@
+YASH JANGIR
+AI & ML COMPUTER SCIENCE ENGINEERING STUDENT
+
+CONTACT
+Email: yashjjn2005@gmail.com
+GitHub: https://github.com/Yashjangir71
+LinkedIn: https://www.linkedin.com/in/yash-jangir-3822b129b/
+
+PROFILE
+Computer Science Engineering (AI & ML) student building practical AI systems, machine learning solutions, and intelligent software products. Interested in Generative AI, automation, prompt engineering, and full-stack development.
+
+EXPERIENCE
+Innovation Intern | RIED Pvt. Ltd. | Aug 2026 - Present | Remote
+- Selected for the RIED Founder Fellowship Program in the IT & Business Development track.
+- Contributed to technical and business growth initiatives with mentors and leadership.
+- Worked on research, innovation, and enterprise-building activities.
+
+AI Automation & Intelligent Solutions Intern | BharatCares | Jun 2026 - Jul 2026 | Remote
+- Contributed to AI agents and workflow automation solutions.
+- Worked on AI integration, Machine Learning, and Data Analytics projects.
+
+PROJECTS
+VendorLead AI - AI-powered lead intelligence and automation platform.
+Smart Inventory Management System - Machine learning forecasting for stock planning.
+PiGuard - Privacy and network protection system for connected environments.
+
+EDUCATION
+Sai Vidya Institute of Technology
+B.E. Computer Science Engineering (AI & ML), 2023-2027
+CGPA: 8.0 / 10
+
+SKILLS
+Python, TypeScript, SQL, Machine Learning, Prompt Engineering, MongoDB, Git, GitHub, Vercel

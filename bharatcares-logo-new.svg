@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title">
+  <title>BharatCares logo</title>
+  <path fill="#12a8d7" d="M73 44h52v19H92v44H73z"/>
+  <path fill="#ff8731" d="M43 75h21v33h40v19H43z"/>
+  <path fill="#ffb018" d="M104 75h53v51h-20V94h-33z"/>
+  <path fill="#50b948" d="M73 136h32V94h20v63H73z"/>
+  <circle cx="146" cy="55" r="10" fill="none" stroke="#171717" stroke-width="3"/>
+  <text x="146" y="59" fill="#171717" font-family="Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle">R</text>
+</svg>
